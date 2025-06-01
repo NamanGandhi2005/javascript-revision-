@@ -31,4 +31,4 @@ let stringNumber=String(someNumber);
 
 console.log(stringNumber);
 console.log(typeof(stringNumber));
-
+console.log(typeof(score));

@@ -32,3 +32,17 @@ let stringNumber=String(someNumber);
 console.log(stringNumber);
 console.log(typeof(stringNumber));
 console.log(typeof(score));
+
+
+/*
+
+
+Operations continue
+*/
+
+
+let value=3;
+let negvalue=-value;
+console.log(typeof(value));
+
+

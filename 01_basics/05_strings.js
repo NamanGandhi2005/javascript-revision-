@@ -8,7 +8,7 @@ console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
 
 
 
-const gameName=new String("naman");//stores string in key value pairs
+const gameName=new String("naman-resident");//stores string in key value pairs
 
 console.log(gameName[0]);
 console.log(gameName.__proto__);
@@ -29,3 +29,15 @@ console.log(anotherString);
 
 
 const newStringOne="    namana   ";
+
+console.log(newStringOne.trim());//remove whitespaces 
+
+const url="https://naman.com/naman%20gandhi"
+
+console.log(url.replace('%20','-'));
+console.log(url.includes('sudar'));//check if substr is present or not
+
+
+console.log(gameName.split('-'));//split string on basis of '-' char 
+
+ 

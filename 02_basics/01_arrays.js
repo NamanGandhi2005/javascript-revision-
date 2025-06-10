@@ -39,6 +39,18 @@ console.log(newArr);//return type of string comma separated
 //slice ,splice 
 
 
+console.log("A",myarr);
+
+const myn1=myarr.slice(1,3)
+console.log(myn1);// [ 32, 4 ]
+console.log("B",myarr);//  [ 1, 32, 4, 5 ] org array sam erehit h slice me 
+
+
+const myn2=myarr.splice(1,3)
+console.log(myn2);//op->[ 32, 4, 5 ]
+console.log("B",myarr);//op of orginial array ->B [ 1 ] array hi split krdi 
+
+
 
 
 

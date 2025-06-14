@@ -39,6 +39,42 @@ const obj2={
 const obj3=Object.assign({},obj1,obj2);//{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 console.log(obj3);
 
+const obj5={...obj1,...obj2};//spread method to join two or more objects
+
+const users=[
+    {
+        id:1,
+        email:"h@gamil.com",
+        
+    },
+    {
+        id:2,
+        email:"h@gamil.com",
+
+    },
+    {
+        id:3,
+        email:"h@gamil.com",
+
+    }
+] 
+
+
+console.log(users[1].email);
+
+//methods in objects 
+
+console.log(Object.keys(tinderUser));//output in array data type
+
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'naman' ], [ 'isLoggedIn', false ] ]
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));//return true of false if it has that property or not 
+
+
+
+
+
 
 
 

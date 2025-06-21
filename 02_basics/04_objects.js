@@ -69,7 +69,35 @@ console.log(Object.keys(tinderUser));//output in array data type
 console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));//[ [ 'id', '123abc' ], [ 'name', 'naman' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//return true of false if it has that property or not 
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+const course={
+    coursename:"js i hindi",
+    price:"999",
+    courseInstructor:"hitesh",
+}
+
+//course.courseInstructor
+
+const {courseInstructor}=course;
+console.log(courseInstructor);//hitesh
+
+
+const navbar=({company})=>{
+
+}
+navbar(company="hitesh");
+
+
+//+++++++++++++++Api++++++++++++++++++++++++
+//apis return data in json format 
+
+// {
+//     name:"naman",
+//     coursename:"js in hindi",
+//     price:"free"
+// }
 
 
 

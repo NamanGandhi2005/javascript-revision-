@@ -42,3 +42,16 @@ if (true){
 // console.log(username);//2nd error due to scope 
 
 
+//+++++++++++++++++++++++++++interesting+++++++++++++++++++++++++++++++++++++++++++++
+
+function addone(num) {
+    return num+1;
+}
+
+addone(5);
+
+const addTwo=function(num){//this is called expression beacuse var holds value of fucntion
+    return num+2;
+}
+
+addTwo(5);

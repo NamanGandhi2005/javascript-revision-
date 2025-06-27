@@ -14,3 +14,25 @@ const myTotal=myNums.reduce((acc,currval)=>{
     return acc+currval;
 },0)
 console.log(myTotal);
+
+const shoppingCart=[
+    {
+        course:"javascript",
+        price:1003,
+    },
+    {
+        course:"pytrhon",
+        price:1023,
+    },
+    {
+        course:"cpp",
+        price:1023,
+    }
+]
+
+const TotalPrice=shoppingCart.reduce((acc,hello)=>{
+    return acc+hello.price;
+},0)
+
+console.log(TotalPrice);
+

@@ -14,5 +14,5 @@ setInterval(function(){//alternate to Cron job on frontend
   let date =new Date();
   // console.log(date.toLocaleTimeString());
   clock.innerHTML=date.toLocaleTimeString();
-},1000)
+},1000) 
 ```

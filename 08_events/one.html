@@ -30,18 +30,18 @@
     //clientX,clientY,screenX,screenY
     //altkey,ctrlkey,shiftkey,keycode
     
-    document.getElementById('images').addEventListener('click',(e)=>{
-        console.log("clicked inside the ul");
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //     console.log("clicked inside the ul");
         
         
 
-    },false)//true or false for event propagation
-    document.getElementById('owl').addEventListener('click',(e)=>{
-        console.log("clicked inside the owl");
-        e.stopPropagation()//stop bubbling 
+    // },false)//true or false for event propagation
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     console.log("clicked inside the owl");
+    //     e.stopPropagation()//stop bubbling 
         
 
-    },false)//event bubbling is present here if we click on owl then it also click ul
+    // },false)//event bubbling is present here if we click on owl then it also click ul
     // document.getElementById('images').addEventListener('click',(e)=>{
     //     console.log("clicked inside the ul");
         
@@ -56,13 +56,24 @@
     // },true)//event capturing is present here if we click on owl then it also click ul
 
 
-    document.getElementById('google').addEventListener('click',(e)=>{
-        e.preventDefault()
-        console.log("google clicked");
-        e.stopPropagation()
-    },false)
+    // document.getElementById('google').addEventListener('click',(e)=>{
+    //     e.preventDefault()
+    //     console.log("google clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        e.preventDefault();
+        console.log(e.target.tagName);
+        let removeIt=e.target.parentNode
+
+        removeIt.remove();//method 1 
+        // removeIt.parentNode.removeChild(removeIt)//method 2
+
+    })
 
 
+    
 
 </script>
 </html>

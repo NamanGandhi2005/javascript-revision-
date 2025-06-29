@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const saynaman=function(){
+        console.log("naman");
+        
+    }
+    const change =function(){
+        document.querySelector('h1').innerHTML="best js series"
+    }
+    setTimeout(saynaman,2000)//millisecond me hota h time
+    const setTime=setTimeout(change,2000)//millisecond me hota h time
+    clearTimeout(setTime)
+
+    
+</script>
+</html>

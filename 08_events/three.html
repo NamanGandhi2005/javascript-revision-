@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const intervalId=function(){
+        const date=new Date();
+        console.log("naman",date.toLocaleTimeString());
+        
+    }
+    const buttonStart=document.querySelector('#start')
+    const buttonStop=document.querySelector('#stop')
+
+
+    let setInter=null;
+    
+    buttonStart.addEventListener('click',()=>{
+        if(!setInter){
+        setInter=setInterval(intervalId,1000);
+        }
+
+    })
+
+    buttonStop.addEventListener('click',()=>{
+        clearInterval(setInter)
+        setInter=null
+    })
+
+    // clearInterval(intervalId)//ek bar bhi run nhi krega
+</script>
+</html>
